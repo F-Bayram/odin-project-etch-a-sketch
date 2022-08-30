@@ -1,0 +1,13 @@
+.idle{
+    height: 50px;
+    width: 50px;
+    border: white 2px solid;
+    background-color: black;
+}
+
+.paint{
+    height: 50px;
+    width: 50px;
+    border: white 2px solid;
+    background-color: beige;
+}
