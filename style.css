@@ -1,13 +1,41 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    --INIT_SIZE: 864px; 
+    --Grid_Size: 50px;
+    --Random_Color: "";
+    --Hue_Value: 0;
+    --Sat_Value: 0;
+    --Light_Value: 0;
+    --Touch_Count: 0;
+}
+
 .idle{
-    height: 50px;
-    width: 50px;
+    height: var(--Grid_Size);
+    width: var(--Grid_Size);
     border: white 2px solid;
     background-color: black;
 }
 
 .paint{
-    height: 50px;
-    width: 50px;
+    height: var(--Grid_Size);
+    width: var(--Grid_Size);
     border: white 2px solid;
-    background-color: beige;
+    background-color: var(--Random_Color);
+}
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: var(--INIT_SIZE);
+    height: var(--INIT_SIZE);
+    margin: 0 auto;
+}
+
+.popupBtn{
+    display: block;
+    margin: 20px auto;
 }
